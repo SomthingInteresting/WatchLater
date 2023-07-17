@@ -24,3 +24,11 @@ Install necessary dependencies
 
 Install TypeScript types for React Router and Redux as development dependencies:
 - npm install --save-dev @types/react-redux @types/react-router-dom
+
+Testing 
+
+Install necessary testing libraries:
+- npm install --save-dev jest ts-jest supertest @types/jest @types/supertest
+
+Initialize a Jest configuration file:
+- npx ts-jest config:init
