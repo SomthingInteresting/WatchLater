@@ -1,5 +1,6 @@
 import mongoose, { Document, Schema } from 'mongoose';
 
+// IUser interface for TypeScript to understand the User document structure.
 export interface IUser extends Document {
     username: string;
     email: string;
