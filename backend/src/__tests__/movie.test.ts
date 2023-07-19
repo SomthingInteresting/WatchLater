@@ -1,10 +1,15 @@
 import { Movie, IMovie } from '../models/Movie';
 import mongoose from 'mongoose';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 describe('Movie Model Test', () => {
     beforeAll(async () => {
-        const url = `mongodb://localhost/WatchLater_test`;
-        await mongoose.connect(url);
+      if (!process.env.DB_URL_TEST) {
+        throw new Error("DB_URL_TEST must be defined");
+    }
+      await mongoose.connect(process.env.DB_URL_TEST);
     });      
 
     afterAll(async () => {
