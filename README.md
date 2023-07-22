@@ -32,3 +32,5 @@ Install necessary testing libraries:
 
 Initialize a Jest configuration file:
 - npx ts-jest config:init
+
+https://trello.com/b/RNRq0vhW/watchlater
